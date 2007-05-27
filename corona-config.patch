@@ -1,0 +1,15 @@
+--- corona-1.0.2/corona-config.in.orig	2002-12-26 00:04:23.000000000 +0100
++++ corona-1.0.2/corona-config.in	2007-05-28 00:29:20.100796554 +0200
+@@ -31,10 +31,10 @@
+             echo @VERSION@
+             ;;
+         --cxxflags)
+-            echo -I@prefix@@includedir@
++            echo -I@includedir@
+             ;;
+         --libs)
+-            echo -L@prefix@@libdir@ -lcorona @EXTRA_LIBS@
++            echo -L@libdir@ -lcorona @EXTRA_LIBS@
+             ;;
+         *)
+             usage 1 1>& 2
