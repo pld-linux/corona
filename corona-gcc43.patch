@@ -1,0 +1,20 @@
+--- corona-1.0.2/src/Convert.cpp	2003-02-26 04:06:53.000000000 +0000
++++ corona-1.0.2/src/Convert.cpp	2009-04-14 21:46:49.000000000 +0000
+@@ -9,6 +9,7 @@
+ #include "Debug.h"
+ #include "SimpleImage.h"
+ #include "Utility.h"
++#include "cstring"
+ 
+ 
+ namespace corona {
+--- corona-1.0.2/src/OpenTGA.cpp	2002-12-27 09:33:42.000000000 +0000
++++ corona-1.0.2/src/OpenTGA.cpp	2009-04-14 21:55:40.000000000 +0000
+@@ -3,6 +3,7 @@
+ #include "Open.h"
+ #include "SimpleImage.h"
+ #include "Utility.h"
++#include "cstring"
+ 
+ 
+ namespace corona {
