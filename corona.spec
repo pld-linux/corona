@@ -13,6 +13,7 @@ Patch2:		%{name}-gcc43.patch
 URL:		http://corona.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
+Buildrequires:	dos2unix
 BuildRequires:	giflib-devel >= 4.1.0
 BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
@@ -68,6 +69,7 @@ Statyczna biblioteka corona.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+dos2unix src/OpenTGA.cpp
 %patch2 -p1
 
 %build
