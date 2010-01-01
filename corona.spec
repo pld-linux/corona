@@ -13,7 +13,7 @@ Patch2:		%{name}-gcc43.patch
 URL:		http://corona.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
-Buildrequires:	dos2unix
+BuildRequires:	dos2unix
 BuildRequires:	giflib-devel >= 4.1.0
 BuildRequires:	libjpeg-devel
 BuildRequires:	libpng-devel
