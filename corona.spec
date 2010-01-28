@@ -2,7 +2,7 @@ Summary:	Image input/output library
 Summary(pl.UTF-8):	Biblioteka wejścia/wyjścia dla obrazów
 Name:		corona
 Version:	1.0.2
-Release:	3
+Release:	4
 License:	zlib
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/corona/%{name}-%{version}.tar.gz
