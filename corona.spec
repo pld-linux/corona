@@ -2,7 +2,7 @@ Summary:	Image input/output library
 Summary(pl.UTF-8):	Biblioteka wejścia/wyjścia dla obrazów
 Name:		corona
 Version:	1.0.2
-Release:	5
+Release:	6
 License:	zlib
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/corona/%{name}-%{version}.tar.gz
@@ -10,6 +10,7 @@ Source0:	http://dl.sourceforge.net/corona/%{name}-%{version}.tar.gz
 Patch0:		%{name}-system-gif.patch
 Patch1:		%{name}-config.patch
 Patch2:		%{name}-gcc43.patch
+Patch3:		%{name}-libpng15.patch
 URL:		http://corona.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -71,6 +72,7 @@ Statyczna biblioteka corona.
 %patch1 -p1
 dos2unix src/OpenTGA.cpp
 %patch2 -p1
+%patch3 -p1
 
 %build
 %{__libtoolize}

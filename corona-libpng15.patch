@@ -1,0 +1,21 @@
+--- corona-1.0.2/src/OpenPNG.cpp~	2002-12-26 02:52:21.000000000 +0100
++++ corona-1.0.2/src/OpenPNG.cpp	2012-02-09 18:24:26.329842098 +0100
+@@ -39,7 +39,7 @@
+   void PNG_error_function(png_structp png_ptr, png_const_charp warning) {
+     // copied from libpng's pngerror.cpp, but without the fprintf
+     jmp_buf jmpbuf;
+-    memcpy(jmpbuf, png_ptr->jmpbuf, sizeof(jmp_buf));
++    memcpy(jmpbuf, png_jmpbuf(png_ptr), sizeof(jmp_buf));
+     longjmp(jmpbuf, 1);
+   }
+ 
+--- corona-1.0.2/src/SavePNG.cpp~	2003-07-17 01:09:48.000000000 +0200
++++ corona-1.0.2/src/SavePNG.cpp	2012-02-09 18:28:20.597717016 +0100
+@@ -145,7 +145,6 @@
+       pixels += width * color_format_bpp;      
+     }
+     png_set_rows(png_ptr, info_ptr, (png_bytepp)rows);
+-    info_ptr->valid |= PNG_INFO_IDAT;
+ 
+     // actually write the image
+     png_write_png(png_ptr, info_ptr, PNG_TRANSFORM_IDENTITY, NULL);
