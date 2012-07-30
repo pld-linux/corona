@@ -5,7 +5,7 @@ Version:	1.0.2
 Release:	7
 License:	zlib
 Group:		Libraries
-Source0:	http://dl.sourceforge.net/corona/%{name}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/corona/%{name}-%{version}.tar.gz
 # Source0-md5:	29d1a7f1e2c85a83e9620496c62740ce
 Patch0:		%{name}-system-gif.patch
 Patch1:		%{name}-config.patch
