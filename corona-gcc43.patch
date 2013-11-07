@@ -18,3 +18,22 @@
  
  
  namespace corona {
+--- corona-1.0.2/src/OpenPNG.cpp~	2013-11-07 14:05:03.000000000 +0100
++++ corona-1.0.2/src/OpenPNG.cpp	2013-11-07 14:05:56.512428889 +0100
+@@ -6,6 +6,7 @@
+ 
+ 
+ #include <png.h>
++#include <string.h>
+ #include "Debug.h"
+ #include "Open.h"
+ #include "SimpleImage.h"
+--- corona-1.0.2/src/SavePNG.cpp~	2013-11-07 14:06:25.000000000 +0100
++++ corona-1.0.2/src/SavePNG.cpp	2013-11-07 14:08:13.652415664 +0100
+@@ -1,5 +1,6 @@
+ #include <memory>
+ #include <png.h>
++#include <string.h>
+ #include "Debug.h"
+ #include "Save.h"
+ #include "Types.h"
