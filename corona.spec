@@ -11,6 +11,7 @@ Patch0:		%{name}-system-gif.patch
 Patch1:		%{name}-config.patch
 Patch2:		%{name}-gcc43.patch
 Patch3:		%{name}-libpng15.patch
+Patch4:		giflib5.patch
 URL:		http://corona.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -74,6 +75,7 @@ Statyczna biblioteka corona.
 %patch1 -p1
 %patch2 -p1
 %patch3 -p1
+%patch4 -p1
 
 %build
 %{__libtoolize}
